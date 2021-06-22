@@ -1,38 +1,320 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+:root {
+  --red: #ef233c;
+  --green: #81c14b;
+  --yellow: #fca400;
+  --violet: #9d4edd;
+  --blue: #abe3fd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #dddddd;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -0.3rem 1rem #333;
+          box-shadow: 0 -0.3rem 1rem #333;
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header div {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div img {
+  margin: 0 0.7rem;
+  width: 3rem;
+}
+
+header div h1 {
+  margin: auto 0.5em;
+}
+
+button {
+  padding: 0.3em 0.7em;
+  border-radius: 99px;
+  background: var(--violet);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.container {
+  max-width: 70rem;
+  width: 100%;
+  height: 90vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .pokelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+
+.container .pokelist::-webkit-scrollbar {
+  display: none;
+}
+
+.container .pokelist .pokebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0.3rem 0;
+  background: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.container .pokelist .pokebox img {
+  width: 5rem;
+  margin-left: 0.5rem;
+}
+
+.container .pokelist .pokebox h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin: auto 0.3em;
+  margin-right: 1em;
+}
+
+.container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.container .info-sec {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.container .info-sec::-webkit-scrollbar {
+  display: none;
+}
+
+.container .info-sec h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin: 0.3em 0 0.1em 0;
+}
+
+.container .info-sec .content {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 0.7rem 0.5rem 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .info-sec .content img {
+  max-width: 15rem;
+  max-height: 15rem;
+  margin: 1.5rem auto;
+}
+
+.container .info-sec .content ul {
+  background: var(--green);
+  border-radius: 1rem;
+  color: #fff;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.container .info-sec .content h3 {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+}
+
+.container .info-sec .content .tag-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .info-sec .content .tag-group .tag {
+  display: block;
+  margin: 0.2em 0.3em;
+  background: var(--yellow);
+  padding: 0.2em 0.5em;
+  border-radius: 99px;
+  color: #fff;
+}
+
+.stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto 1rem;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.stat span {
+  display: block;
+}
+
+.stat .progress-bar {
+  display: block;
+  content: "";
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  height: 1rem;
+  min-width: 10em;
+  background: var(--violet);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.stat .progress-bar .progress {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+}
+
+@media (max-width: 750px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .container .content {
+    margin: .4rem;
+  }
+  .container .info-sec {
+    padding: 0;
+  }
+  .container .pokelist {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-height: 5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.3em;
+  }
+  .container .pokelist .pokebox {
+    margin: 0.3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .pokelist .pokebox img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .container .pokelist .pokebox h3 {
+    margin: 0.3em;
+  }
+  .container .pagination {
+    padding: 0 1rem;
+    margin: auto;
+  }
+  .container .pagination button {
+    padding: auto;
+    margin: auto .5rem;
+  }
+  .container .stat .progress-bar {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
+/*# sourceMappingURL=App.css.map */
