@@ -157,6 +157,7 @@ button:hover {
 .search .search-results ul li {
   margin-bottom: .3em;
   font-weight: 600;
+  text-transform: lowercase;
 }
 
 .container {

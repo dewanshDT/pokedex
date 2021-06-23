@@ -36,6 +36,7 @@ const Search = ({setCurrentPokemon}) => {
         return a.name.length - b.name.length;
     });
     setSearchedPokemons(sordedPokeArr);
+    setText("");
   }, [text]);
 
   function submitHandler(e) {
