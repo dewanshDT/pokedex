@@ -43,8 +43,18 @@ const Info = ({ currentPokemon }) => {
           ))}
         </div>
         <h3>Stats</h3>
-        {pokeData.stats.map(stat => {
-          return <p className="stat" key={pokeData.stats.indexOf(stat)}><span>{stat.stat.name}</span> <span className="progress-bar"><span className="progress" style={{marginLeft: `${stat.base_stat}%`}}></span></span></p>
+        {pokeData.stats.map((stat, indx) => {
+          return (
+            <p className="stat" key={indx}>
+              <span>{stat.stat.name}</span>{" "}
+              <span className="progress-bar">
+                <span
+                  className="progress"
+                  style={{ width: `${stat.base_stat}%` }}
+                >{stat.base_stat}</span>
+              </span>
+            </p>
+          );
         })}
       </div>
     </div>
