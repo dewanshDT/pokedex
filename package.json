@@ -44,5 +44,12 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "DEW",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewanshDT/pokedex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dewanshDT/pokedex/issues"
+  }
 }
