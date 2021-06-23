@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from "../favicon_io/android-chrome-192x192.png"
 
 const Header = () => {
     return (
         <header>
             <div>
-            <img src="/favicon_io/android-chrome-192x192.png" />
+            <img src={logo} />
             <h1>Pokédex</h1>
             </div>
         </header>
