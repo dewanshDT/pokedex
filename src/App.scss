@@ -105,6 +105,7 @@ button {
     outline: none;
     color: inherit;
     font-family: inherit;
+    text-transform: lowercase;
   }
 
   .search-results {
@@ -123,7 +124,6 @@ button {
       li {
         margin-bottom: .3em;
         font-weight: 600;
-        text-transform: lowercase;
       }
     }
   }
