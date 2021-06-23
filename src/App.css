@@ -60,6 +60,9 @@ header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header div img {
@@ -86,6 +89,74 @@ button {
 button:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ddd;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 99px;
+  padding-left: .5rem;
+  margin: auto;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.search button {
+  color: #fff;
+  background: var(--yellow);
+  padding: 0;
+  margin: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.search button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.search input {
+  height: 1.7rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.search .search-results {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: #ddd;
+  margin: 0;
+  border-radius: 1rem;
+  padding: 0 .5rem;
+}
+
+.search .search-results ul {
+  list-style: none;
+  margin: .3rem 0;
+}
+
+.search .search-results ul li {
+  margin-bottom: .3em;
+  font-weight: 600;
 }
 
 .container {
@@ -179,9 +250,8 @@ button:hover {
 }
 
 .content {
-  background-color: #fff;
   border-radius: 1rem;
-  padding: 2rem 0.7rem 0.5rem 0.7rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,10 +343,14 @@ button:hover {
 @media (max-width: 750px) {
   header h1 {
     font-size: 1.5rem;
+    display: none;
   }
   header div img {
     width: 2rem;
     height: 2rem;
+  }
+  header .search {
+    margin-right: .1rem;
   }
   .container {
     -webkit-box-orient: vertical;

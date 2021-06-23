@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header setCurrentPokemon={setCurrentPokemon} />
       <div className="container">
       <Pokelist
         Pokemons={Pokemons}

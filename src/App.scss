@@ -45,6 +45,7 @@ header {
     width: 100%;
     margin: 0.7rem;
     display: flex;
+    align-items: center;
 
     img {
       margin: 0 0.7rem;
@@ -69,6 +70,61 @@ button {
 
   &:hover {
     filter: brightness(1.1);
+  }
+}
+
+.search {
+  display: flex; 
+  align-items: center;
+  background: #ddd;
+  height: max-content;
+  width: max-content;
+  border-radius: 99px;
+  padding-left: .5rem;
+  margin: auto;
+  margin-right: 1rem;
+  position: relative;
+
+  button {
+    color: #fff;
+    background: var(--yellow);
+    padding: 0;
+    margin: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  input {
+    height: 1.7rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+  }
+
+  .search-results {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    background: #ddd;
+    margin: 0;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    ul{
+      list-style: none;
+      margin: .3rem 0;
+      li {
+        margin-bottom: .3em;
+        font-weight: 600;
+      }
+    }
   }
 }
 
@@ -143,9 +199,8 @@ button {
 }
 
 .content {
-  background-color: #fff;
   border-radius: 1rem;
-  padding: 2rem 0.7rem 0.5rem 0.7rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 
@@ -224,11 +279,16 @@ button {
   header {
     h1 {
       font-size: 1.5rem;
+      display: none;
     }
 
     div img {
       width: 2rem;
       height: 2rem;
+    }
+
+    .search {
+      margin-right: .1rem;
     }
   }
 
