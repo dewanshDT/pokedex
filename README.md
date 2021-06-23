@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+<!-- 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/dewanshDT/pokedex">
+    <img src="src/favicon_io/android-chrome-512x512.png" alt="Logo" width="80" height="80">
+  </a>
 
-### `npm start`
+  <h3 align="center">DEW | Pokedex</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    A pokedex created with ⚛ react and pokeapi
+    <br />
+    <a href="https://dewanshdt.github.io/pokedex/"><strong>Visit the wesite »</strong></a>
+    <br />
+    <a href="https://github.com/dewanshDT/pokedex/issues">Report a Bug</a>
+    ·
+    <a href="https://github.com/dewanshDT/pokedex/issues">Request Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run build`
+<!-- [![Pokedex][product-screenshot]](https://example.com) -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a beautiful website created with react and pokeapi for learning purpose. It contains all the data of all the pokemons of the world 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [React](https://reactjs.org)
+* [Pokeapi](https://Pokeapi.co)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+These are some prerequsits and instructions for getting started with the project.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
+You must have nodejs and npm installed on your system.
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/dewanshDT/pokedex.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- USAGE EXAMPLES -->
+### Usage
+to start the app run this command in the root folder
+```sh
+npm start
+```
 
-### Code Splitting
+<!-- ROADMAP -->
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+See the [open issues](https://github.com/dewanshDT/pokedex/issues) for a list of proposed features (and known issues).
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Advanced Configuration
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- LICENSE -->
+## License
 
-### `npm run build` fails to minify
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- CONTACT -->
+## Contact
+
+Dewansh Thakur - [@ThakurDewansh](https://twitter.com/ThakurDewansh) - dewansh.dt@gmail.com
+
+Project Link: [https://github.com/dewanshDT/pokedex](https://github.com/dewanshDT/pokedex)
+
