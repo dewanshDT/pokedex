@@ -26,7 +26,7 @@ function App() {
         method: "get",
         url: currentPageURL,
         params: {
-          limit: 15,
+          limit: 70,
         },
       });
       setPokemons(res.data.results);
