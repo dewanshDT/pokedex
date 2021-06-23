@@ -28,7 +28,7 @@ const Search = ({setCurrentPokemon}) => {
   useEffect(() => {
     getPokemons();
     let pokeArr = pokemons.filter((pokemon) => {
-      return pokemon.name.includes(text);
+      return pokemon.name.includes(text.toLowerCase());
     });
     const sordedPokeArr = pokeArr.sort(function(a, b){
         // ASC  -> a.length - b.length
@@ -36,12 +36,12 @@ const Search = ({setCurrentPokemon}) => {
         return a.name.length - b.name.length;
     });
     setSearchedPokemons(sordedPokeArr);
-    setText("");
   }, [text]);
 
   function submitHandler(e) {
     e.preventDefault();
     searchedPokemons[0] && setCurrentPokemon(searchedPokemons[0]);
+    setText("");
   }
 
   return (
