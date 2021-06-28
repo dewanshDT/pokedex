@@ -30,12 +30,12 @@ const Search = ({setCurrentPokemon}) => {
     let pokeArr = pokemons.filter((pokemon) => {
       return pokemon.name.includes(text.toLowerCase());
     });
-    const sordedPokeArr = pokeArr.sort(function(a, b){
+    const sortedPokeArr = pokeArr.sort(function(a, b){
         // ASC  -> a.length - b.length
         // DESC -> b.length - a.length
         return a.name.length - b.name.length;
     });
-    setSearchedPokemons(sordedPokeArr);
+    setSearchedPokemons(sortedPokeArr);
   }, [text]);
 
   function submitHandler(e) {
@@ -72,7 +72,7 @@ const Search = ({setCurrentPokemon}) => {
       <div className="search-results">
         {text && <ul>
           {searchedPokemons.map((poke) => (
-            <li type="button">{poke.name}</li>
+            <li onClick={() => setCurrentPokemon(poke)}>{poke.name}</li>
           ))}
         </ul>}
       </div>

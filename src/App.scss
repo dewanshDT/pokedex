@@ -74,13 +74,13 @@ button {
 }
 
 .search {
-  display: flex; 
+  display: flex;
   align-items: center;
   background: #ddd;
   height: max-content;
   width: max-content;
   border-radius: 99px;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   margin: auto;
   margin-right: 1rem;
   position: relative;
@@ -117,14 +117,21 @@ button {
     background: #ddd;
     margin: 0;
     border-radius: 1rem;
-    padding: 0 .5rem;
-    ul{
+    overflow: hidden;
+
+    ul {
       list-style: none;
-      margin: .3rem 0;
+      margin: 0.3rem 0;
       li {
-        margin-bottom: .3em;
+        margin-bottom: 0.3em;
         font-weight: 600;
         text-transform: lowercase;
+        background: #ddd;
+        padding: 0 0.5rem;
+
+        &:hover {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -186,7 +193,7 @@ button {
   flex-grow: 1;
   overflow-y: auto;
   border-radius: 1rem;
-  margin: 0.7rem 0.5rem .7rem 0rem;
+  margin: 0.7rem 0.5rem 0.7rem 0rem;
   background-color: #fff;
 
   &::-webkit-scrollbar {
@@ -259,7 +266,9 @@ button {
     flex-basis: 70%;
     height: 1rem;
     min-width: 10em;
-    background: var(--blue);
+    background: #ddd;
+    // box-shadow: inset 0 0 5px 3px #0005;
+    // border: 2px solid var(--violet);
     border-radius: 99px;
     overflow: hidden;
 
@@ -268,6 +277,7 @@ button {
       width: 100%;
       height: 100%;
       background: var(--violet);
+      // box-shadow: inset 0 0 5px 3px #0005;
       color: #fff;
       // text-align: right;
       padding-left: 0.2em;
@@ -277,7 +287,6 @@ button {
 }
 
 @media (max-width: 750px) {
-
   header {
     h1 {
       font-size: 1.5rem;
@@ -290,7 +299,7 @@ button {
     }
 
     .search {
-      margin-right: .1rem;
+      margin-right: 0.1rem;
     }
   }
 

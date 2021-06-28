@@ -106,7 +106,7 @@ button:hover {
   width: -moz-max-content;
   width: max-content;
   border-radius: 99px;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   margin: auto;
   margin-right: 1rem;
   position: relative;
@@ -147,18 +147,24 @@ button:hover {
   background: #ddd;
   margin: 0;
   border-radius: 1rem;
-  padding: 0 .5rem;
+  overflow: hidden;
 }
 
 .search .search-results ul {
   list-style: none;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 
 .search .search-results ul li {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   font-weight: 600;
   text-transform: lowercase;
+  background: #ddd;
+  padding: 0 0.5rem;
+}
+
+.search .search-results ul li:hover {
+  font-weight: 700;
 }
 
 .container {
@@ -237,7 +243,7 @@ button:hover {
           flex-grow: 1;
   overflow-y: auto;
   border-radius: 1rem;
-  margin: 0.7rem 0.5rem .7rem 0rem;
+  margin: 0.7rem 0.5rem 0.7rem 0rem;
   background-color: #fff;
 }
 
@@ -327,7 +333,7 @@ button:hover {
       flex-basis: 70%;
   height: 1rem;
   min-width: 10em;
-  background: var(--blue);
+  background: #ddd;
   border-radius: 99px;
   overflow: hidden;
 }
@@ -352,7 +358,7 @@ button:hover {
     height: 2rem;
   }
   header .search {
-    margin-right: .1rem;
+    margin-right: 0.1rem;
   }
   .container {
     -webkit-box-orient: vertical;
