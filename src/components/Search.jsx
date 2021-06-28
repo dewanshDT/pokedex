@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const Search = ({setCurrentPokemon}) => {
+const Search = ({ setCurrentPokemon }) => {
   const [text, setText] = useState("");
   const [pokemons, setPokemons] = useState([]);
   const [searchedPokemons, setSearchedPokemons] = useState([]);
@@ -30,10 +30,10 @@ const Search = ({setCurrentPokemon}) => {
     let pokeArr = pokemons.filter((pokemon) => {
       return pokemon.name.includes(text.toLowerCase());
     });
-    const sortedPokeArr = pokeArr.sort(function(a, b){
-        // ASC  -> a.length - b.length
-        // DESC -> b.length - a.length
-        return a.name.length - b.name.length;
+    const sortedPokeArr = pokeArr.sort(function (a, b) {
+      // ASC  -> a.length - b.length
+      // DESC -> b.length - a.length
+      return a.name.length - b.name.length;
     });
     setSearchedPokemons(sortedPokeArr);
   }, [text]);
@@ -70,11 +70,20 @@ const Search = ({setCurrentPokemon}) => {
         </svg>
       </button>
       <div className="search-results">
-        {text && <ul>
-          {searchedPokemons.map((poke) => (
-            <li onClick={() => setCurrentPokemon(poke)}>{poke.name}</li>
-          ))}
-        </ul>}
+        {text && (
+          <ul>
+            {searchedPokemons.map((poke) => (
+              <li
+                onClick={() => {
+                  setCurrentPokemon(poke);
+                  setText("");
+                }}
+              >
+                {poke.name}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </form>
   );
