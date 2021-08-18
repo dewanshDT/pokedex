@@ -35,7 +35,7 @@
 
 <!-- [![Pokedex][product-screenshot]](https://example.com) -->
 
-This is a beautiful website created with react and pokeapi for learning purpose. It contains all the data of all the pokemons of the world 
+This is a beautiful pokedex created with react and pokeapi for learning purpose. It contains all the data of all the pokemons of the world, unlike any other Pokedex it has search functionality implemented on the frontend, as the pokeapi doesn't have one.
 
 ### Built With
 * [React](https://reactjs.org)
